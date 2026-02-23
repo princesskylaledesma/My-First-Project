@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="explore.css">
+</head> 
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Princess Kyla M. Ledesma</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Princess Kyla M. Ledesma</span></h1>
+        <h2>BSIT Student | Aspiring Web Developer</h2>
+        <p class="lead">
+          Passionate about turning ideas into beautiful, interactive web experiences.<br>
+          Currently learning modern JavaScript, frameworks, and creating responsive, user-friendly interfaces.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn primary">Get In Touch</a>
+          <a href="#projects" class="btn outline">View Projects</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/princesskylaledesma" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/share/18DqDWFPPe/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.tiktok.com/@cess_madesly?_r=1&_t=ZS-93i1SqwitOL" target="_blank" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+          <a href="mailto:princesskylaledesma@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="profile-wrapper">
+          <!-- Replace with your real photo -->
+          <img src="images/profile.jpg" 
+               alt="Princess Kyla" class="profile-img"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h3>About Me</h3>
+        <div class="card">
+          <div class="card-content">
+            <p>
+              I'm a passionate developer who loves turning ideas into beautiful, interactive experiences on the web. 
+              Currently focused on modern JavaScript, React/Next.js, TypeScript, TailwindCSS and creating fast, accessible user interfaces.
+            </p>
+            <p style="margin-top:1.2rem;">
+              When I'm not coding, you can find me reading sci-fi, playing indie games, or trying to make the perfect cold brew.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h3>Skills & Tools</h3>
+        <div class="card">
+          <div class="card-content">
+            <div class="skills-list">
+              <span class="skill-tag">HTML & CSS</span>
+              <span class="skill-tag">JavaScript </span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Database</span>
+              <span class="skill-tag">Web Designer</span>
+              <!-- Add more as you learn -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+  <div class="container">
+    <h3>Recent Projects</h3>
+    <div class="card-container">
+      
+      <div class="card">
+        <a href="../Tic Tac Toe/index.html" target="_blank">
+          <img src="images/code pic1.jpg" alt="The Tic Tac Toe App">
+        </a>
+        <div class="card-content">
+          <h4>The Tic Tac Toe App</h4>
+          <p>Interactive game • My very first game project</p>
+          <p class="tech-stack">HTML • CSS • JavaScript</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="../calculator/" target="_blank">
+          <img src="images/code pic2.jpg" alt="Simple Calculator">
+        </a>
+        <div class="card-content">
+          <h4>Simple Calculator</h4>
+          <p>Interactive game • Basic calculator with arithmetic operations</p>
+          <p class="tech-stack">HTML • CSS • JavaScript</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="../Lab 3/" target="_blank">
+          <img src="images/code pic3.jpg" alt="To-Do List App">
+        </a>
+        <div class="card-content">
+          <h4>My To-Do List</h4>
+          <p>Interactive task manager with add/remove functionality</p>
+          <p class="tech-stack">HTML • CSS • JavaScript</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h3>Get in Touch</h3>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="How should I call you?"/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com"/>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="What would you like to talk about?"></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <div style="position:fixed; bottom:25px; right:25px; z-index:999;">
+    <a href="../index.html" 
+       style="background:#aa7df8; color:white; padding:12px 24px; 
+              border-radius:50px; text-decoration:none; font-weight:600; 
+              box-shadow:0 4px 15px rgba(0,0,0,0.25); display:inline-block;">
+       Back to Home Page
+    </a>
+</div>
+
+  <footer>
+    <p>© <span id="year"></span> Princess Kyla — Code with passion, design with purpose</p>
+  </footer>
+
+  <script src="explore.js"></script>
+
+
+</body>
+</html>

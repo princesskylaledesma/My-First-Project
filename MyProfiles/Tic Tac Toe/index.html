@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe ni Kyla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- setup panel displayed before the game starts -->
+     <h1 class="title">TIC TAC TOE NI KYLA</h1>
+    <div id="setup">
+        <p>Ge Pili Baka niya?</p>
+        <label><input type="radio" name="player" value="x" checked> X</label>
+        <label><input type="radio" name="player" value="o"> O</label>
+        <button id="startButton">Start</button>
+        <div style="margin-top:10px;">
+            <label><input type="checkbox" id="muteCheckbox"> Mute Music</label>
+        </div>
+    </div>
+
+    <!-- background music (replace src with your file) -->
+    <audio id="bgMusic" src="video music/maoy.mp3" loop></audio>
+
+    <div class="board hidden" id="board">
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+    </div>
+    <div class = "winning-message" id="winningMessage">
+        <div id ="winningMessageText"></div>
+        <button id ="restartButton">Restart</button>
+    </div>
+    <script src="script.js"></script>
+
+    
+</nav>
+<div style="position:fixed; bottom:25px; right:25px; z-index:999;">
+    <a href="../explore/explore.html" 
+       style="background:#7c3aed; color:white; padding:12px 24px; 
+              border-radius:50px; text-decoration:none; font-weight:600; 
+              box-shadow:0 4px 15px rgba(0,0,0,0.25); display:inline-block;">
+       Back to Explore Page
+    </a>
+</div>
+</body>
+</html>
